@@ -13,8 +13,8 @@
     --link-color: #ffffff;
     --hover: #F5CAC3;
   /* navbar links: */
-    --highlight: #ffffff; /* active bg color */
-    --active: #F5CAC3 /* active text color */
+    --highlight: #F7EDE2; /* active bg color */
+    --active: #84A59D /* active text color */
 }
 
 html {

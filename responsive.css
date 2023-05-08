@@ -1,9 +1,9 @@
 /* minor changes to the design can all be made in this block */
 :root {
   /* background image: */
-    --main-bg: url("images/tree.jpg");
+    --main-bg: url("tree.jpg");
   /* background color to show while loading + just in case: */
-    --bg-2: #35619e;
+    --bg-2: #F28482;
   /* main body text: */
     --text-color: #ffffff;
     --main-font: 'Nunito', sans-serif;
@@ -11,10 +11,10 @@
     --fancy-font: 'Sofia', cursive;
   /* links: */
     --link-color: #ffffff;
-    --hover: #fd8579;
+    --hover: #F5CAC3;
   /* navbar links: */
     --highlight: #ffffff; /* active bg color */
-    --active: #10192b /* active text color */
+    --active: #F5CAC3 /* active text color */
 }
 
 html {

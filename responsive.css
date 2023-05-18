@@ -5,16 +5,16 @@
   /* background color to show while loading + just in case: */
     --bg-2: #84A59D;
   /* main body text: */
-    --text-color: #ffffff;
+    --text-color: #FBFFEE;
     --main-font: 'Nunito',optima;
   /* accent text: */
     --fancy-font: 'Sofia', optima;
   /* links: */
-    --link-color: #84A59D;
-    --hover: #F7EDE2;
+    --link-color:#FBFFEE;
+    --hover: #617969;
   /* navbar links: */
-    --highlight: #F7EDE2; /* active bg color */
-    --active: #84A59D /* active text color */
+    --highlight: #FBFFEE; /* active bg color */
+    --active: #617969 /* active text color */
 }
 
 html {

@@ -39,20 +39,35 @@ This project explores Major League Baseball team performance through interactive
 <h2>Explore the Visualizations</h2>
 <p>Select a team below to view their performance dashboard:</p>
 
-<select id="teamSelect" onchange="updateReport(this.value)">
-  <option value="">-- Select a team --</option>
-  <option value="reports/yankees.pdf">Yankees</option>
-  <option value="reports/dodgers.pdf">Dodgers</option>
-  <option value="reports/braves.pdf">Braves</option>
+ <label for="teamSelect">Choose a team:</label>
+  <select id="teamSelect">
+    <option value="">-- Select a Team --</option>
+    <option value="Yankees">Yankees</option>
+    <option value="Dodgers">Dodgers</option>
+    <option value="Braves">Braves</option>
+    <option value="Mets">Mets</option>
+    <!-- Add all other team names as needed -->
+  </select>
 
-</select>
-
-<iframe id="reportFrame" src="" width="100%" height="700px" style="margin-top: 1em; border: 1px solid #ccc;"></iframe>
+  <div id="reportContainer">
+    <img id="teamReportImage" src="" alt="Team report will appear here." style="display:none;" />
+  </div>
 
 <script>
-  function updateReport(filePath) {
-    document.getElementById("reportFrame").src = filePath;
-  }
+    const teamSelect = document.getElementById("teamSelect");
+    const teamReportImage = document.getElementById("teamReportImage");
+
+    teamSelect.addEventListener("change", () => {
+      const team = teamSelect.value;
+      if (team) {
+        const imagePath = `team_reports/${team}.png`;
+        teamReportImage.src = imagePath;
+        teamReportImage.style.display = "block";
+      } else {
+        teamReportImage.src = "";
+        teamReportImage.style.display = "none";
+      }
+    });
 </script>
 
 </div>

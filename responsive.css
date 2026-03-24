@@ -178,3 +178,23 @@ footer ul li {
     float: none;
   }
 }
+
+.talks-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.talks-text {
+  flex: 2;
+}
+
+.talks-image {
+  flex: 1;
+}
+
+.talks-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}

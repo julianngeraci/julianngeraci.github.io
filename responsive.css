@@ -183,10 +183,11 @@ footer ul li {
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  flex-wrap: nowrap; /* THIS prevents it from dropping underneath */
 }
 
 .talks-text {
-  flex: 2;
+  flex: 3;
 }
 
 .talks-image {
@@ -195,6 +196,7 @@ footer ul li {
 
 .talks-image img {
   width: 100%;
-  max-width: 250px;
+  max-width: 220px;
+  height: auto;
   border-radius: 10px;
 }
